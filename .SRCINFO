@@ -1,0 +1,18 @@
+pkgbase = dwmblocks-jt
+	pkgdesc = Johan Thorén's personal patched version of dwmblocks.
+	pkgver = .r30.31b9d65
+	pkgrel = 1
+	url = https://github.com/torrinfail/dwmblocks
+	arch = x86_64
+	license = ISC
+	makedepends = git
+	depends = libx11
+	optdepends = dwm
+	provides = dwmblocks
+	conflicts = dwmblocks
+	options = zipman
+	source = dwmblocks::git+https://github.com/torrinfail/dwmblocks.git
+	md5sums = SKIP
+
+pkgname = dwmblocks-jt
+
