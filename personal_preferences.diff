@@ -20,7 +20,7 @@ diff --unified --text dwmblocks/blocks.h dwmblocks.new/blocks.h
 -	{"", "~/bin/statusbar/clock",						5,		0},
 +  /*Icon*/  /*Command*/                    /*Update Interval*/  /*Update Signal*/
 +  {"",    "$HOME/bin/status/geoip.sh",     10,                  0},
-+  {"",    "$HOME/bin/status/vpn_ip.sh",    10,                  0},
++  {"",    "$HOME/bin/status/vpn_ip.sh",    1,                   0},
 +  {"",    "$HOME/bin/status/wired_ip.sh",  10,                  0},
 +  {"",    "$HOME/bin/status/wifi_ip.sh",   10,                  0},
 +  {"",    "$HOME/bin/status/cpu_load.sh",  5,                   0},
