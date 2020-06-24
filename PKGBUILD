@@ -26,11 +26,20 @@ pkgver(){
  	  echo "${_pkgver}.r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
+_patch_it() {
+    echo "Adding patch $1"
+    patch --forward --strip=1 --input="${srcdir}/${1}"
+    echo ""
+}
+
 prepare() {
-  cd $_pkgname
-  echo "Adding personal preferences patch:"
-  patch --forward --strip=1 --input="${srcdir}/personal_preferences.diff"
-  echo ""
+    cd $_pkgname
+
+    patches=(personal_preferences.diff)
+
+    for p in "${patches[@]}"; do
+        _patch_it "$p"
+    done
 
   # If a blocks.h exists in the root directory, then it will be used
   # instead.
