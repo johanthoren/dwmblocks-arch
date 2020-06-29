@@ -1,7 +1,7 @@
 diff --unified --text dwmblocks/blocks.h dwmblocks.new/blocks.h
 --- dwmblocks/blocks.h	2020-06-22 12:22:39.663038013 +0200
 +++ dwmblocks.new/blocks.h	2020-06-22 12:26:27.770563841 +0200
-@@ -1,19 +1,16 @@
+@@ -1,19 +1,17 @@
  //Modify this file to change what commands output to your statusbar, and recompile using the make command.
  static const Block blocks[] = {
 -	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
@@ -28,6 +28,7 @@ diff --unified --text dwmblocks/blocks.h dwmblocks.new/blocks.h
 +  {"",    "$HOME/bin/status/used_ram.sh",   5,                   0},
 +  {"",    "$HOME/bin/status/free_disk.sh",  10,                  0},
 +  {"",    "$HOME/bin/status/bat.sh",        10,                  0},
++  {"",    "$HOME/bin/status/airpods.sh",    5,                   0},
 +  {"",    "$HOME/bin/status/volume.sh",     1,                   0},
 +  {"",    "$HOME/bin/status/clock.sh",      1,                   0},
  };
