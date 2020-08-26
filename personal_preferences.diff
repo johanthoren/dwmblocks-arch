@@ -1,26 +1,16 @@
-diff --unified --text dwmblocks/blocks.h dwmblocks.new/blocks.h
---- dwmblocks/blocks.h	2020-06-22 12:22:39.663038013 +0200
-+++ dwmblocks.new/blocks.h	2020-06-22 12:26:27.770563841 +0200
-@@ -1,19 +1,18 @@
+diff --unified --text dwmblocks/blocks.def.h dwmblocks.new/blocks.def.h
+--- dwmblocks/blocks.def.h	2020-06-22 12:22:39.663038013 +0200
++++ dwmblocks.new/blocks.def.h	2020-06-22 12:26:27.770563841 +0200
+@@ -1,11 +1,21 @@
  //Modify this file to change what commands output to your statusbar, and recompile using the make command.
  static const Block blocks[] = {
 -	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
--	{"", "cat ~/.pacupdate | sed /📦0/d",					0,		9},
--	
--	{"🧠", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
+-	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 -
--	{"", "~/bin/statusbar/volume",						0,		10},
--
--	{"☀", "xbacklight | sed 's/\\..*//'",					0,		11},
--	
--	{"", "~/bin/statusbar/battery",						5,		0},
--
--	{"🌡", "sensors | awk '/^temp1:/{print $2}'",				5,		0},
--
--	{"", "~/bin/statusbar/clock",						5,		0},
+-	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
 +  /*Icon*/  /*Command*/                     /*Update Interval*/  /*Update Signal*/
-#+  {"",    "$HOME/bin/status/geoip.sh",     10,                  0},
 +  {"",    "$HOME/bin/status/vpn.sh",        1,                   0},
++  {"",    "$HOME/bin/status/mail.sh",       10,                  0},
 +  {"",    "$HOME/bin/status/wired.sh",      10,                  0},
 +  {"",    "$HOME/bin/status/wifi.sh",       10,                  0},
 +  {"",    "$HOME/bin/status/cpu_load.sh",   5,                   0},
@@ -35,3 +25,6 @@ diff --unified --text dwmblocks/blocks.h dwmblocks.new/blocks.h
  };
  
  //sets delimeter between status commands. NULL character ('\0') means no delimeter.
+-static char delim[] = " | ";
++static char delim[] = "|";
+ static unsigned int delimLen = 5;
