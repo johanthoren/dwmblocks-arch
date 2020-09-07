@@ -3,7 +3,7 @@
 pkgname=dwmblocks-jt
 _pkgname=dwmblocks
 builddir="$(pwd)"
-pkgver=0.r48.904e407
+pkgver=0.r55.b7d1970
 pkgrel=1
 pkgdesc="Johan Thorén's personal patched version of dwmblocks."
 url="https://github.com/torrinfail/dwmblocks"
