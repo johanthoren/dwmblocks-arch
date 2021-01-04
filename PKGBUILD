@@ -3,10 +3,10 @@
 pkgname=dwmblocks-jt
 _pkgname=dwmblocks
 builddir="$(pwd)"
-pkgver=0.r61.d294ac2
+pkgver=0.r63.96cbb45
 pkgrel=1
 pkgdesc="Johan Thorén's personal patched version of dwmblocks."
-url="https://github.com/johanthoren/dwmblocks"
+url="https://github.com/torrinfail/dwmblocks"
 arch=('x86_64')
 license=('ISC')
 options=(zipman)
@@ -16,7 +16,7 @@ makedepends=('git')
 provides=('dwmblocks')
 conflicts=('dwmblocks')
 source=(personal_preferences.diff
-        "$_pkgname::git+https://github.com/johanthoren/dwmblocks.git")
+        "$_pkgname::git+https://github.com/torrinfail/dwmblocks.git")
 md5sums=('SKIP'
          'SKIP')
 
