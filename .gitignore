@@ -4,3 +4,4 @@ pkg/
 dwmblocks/
 src/
 blocks.h
+help-dummy.o
