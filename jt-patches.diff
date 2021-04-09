@@ -9,7 +9,7 @@ diff --unified --text dwmblocks/blocks.def.h dwmblocks.new/blocks.def.h
 -
 -	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
 +  /*Icon*/  /*Command*/                     /*Update Interval*/  /*Update Signal*/
-+  {"",    "$HOME/bin/status/vpn.sh",        1,                   0},
++  {"",    "$HOME/bin/status/vpn.sh",        10,                  0},
 +  {"",    "$HOME/bin/status/mail.sh",       10,                  0},
 +  {"",    "$HOME/bin/status/wired.sh",      10,                  0},
 +  {"",    "$HOME/bin/status/wifi.sh",       10,                  0},

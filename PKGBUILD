@@ -14,9 +14,9 @@ depends=('libx11' 'dwm' 'inetutils' 'ttf-symbola')
 makedepends=('git')
 provides=('dwmblocks')
 conflicts=('dwmblocks')
-source=(personal_preferences.diff
+source=(jt-patches.diff
         "$_pkgname::git+https://github.com/johanthoren/dwmblocks.git")
-md5sums=('SKIP'
+md5sums=('86a1b170a1120a04db584d935af15bb3'
          'SKIP')
 
 pkgver(){
@@ -34,7 +34,7 @@ _patch_it() {
 prepare() {
     cd $_pkgname
 
-    patches=(personal_preferences.diff)
+    patches=(jt-patches.diff)
 
     for p in "${patches[@]}"; do
         _patch_it "$p"
