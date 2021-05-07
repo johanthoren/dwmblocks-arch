@@ -23,7 +23,7 @@ diff --unified --text dwmblocks/blocks.def.h dwmblocks.new/blocks.def.h
 +  {"",    "$HOME/bin/status/volume.sh",     1,                   0},
 +  {"",    "$HOME/bin/status/clock.sh",      1,                   0},
  };
- 
+
  //sets delimeter between status commands. NULL character ('\0') means no delimeter.
 -static char delim[] = " | ";
 +static char delim[] = "|";

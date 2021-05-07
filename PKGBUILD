@@ -16,8 +16,10 @@ provides=('dwmblocks')
 conflicts=('dwmblocks')
 source=(jt-patches.diff
         "$_pkgname::git+https://github.com/johanthoren/dwmblocks.git")
-md5sums=('86a1b170a1120a04db584d935af15bb3'
-         'SKIP')
+md5sums=(
+  'b89d7bf7b4dbea3933ed0b7c4e6d52ed'
+  'SKIP'
+)
 
 pkgver(){
 	  cd $_pkgname
