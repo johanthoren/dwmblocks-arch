@@ -17,7 +17,7 @@ conflicts=('dwmblocks')
 source=(jt-patches.diff
         "$_pkgname::git+https://github.com/johanthoren/dwmblocks.git")
 md5sums=(
-  '3f137fd62c57f51a436714c2dae875a6'
+  '11382abebfa30d9e0c2d5d55ef195c00'
   'SKIP'
 )
 

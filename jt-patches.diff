@@ -1,7 +1,7 @@
 diff --unified --text dwmblocks/blocks.def.h dwmblocks.new/blocks.def.h
 --- dwmblocks/blocks.def.h	2020-06-22 12:22:39.663038013 +0200
 +++ dwmblocks.new/blocks.def.h	2020-06-22 12:26:27.770563841 +0200
-@@ -1,11 +1,24 @@
+@@ -1,11 +1,23 @@
  //Modify this file to change what commands output to your statusbar, and recompile using the make command.
  static const Block blocks[] = {
 -	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
@@ -9,7 +9,6 @@ diff --unified --text dwmblocks/blocks.def.h dwmblocks.new/blocks.def.h
 -
 -	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
 +  /*Icon*/  /*Command*/                     /*Update Interval*/  /*Update Signal*/
-+  {"",    "$HOME/bin/status/euro2020_scores.sh", 30,               0},
 +  {"",    "$HOME/bin/status/vpn.sh",          10,                  0},
 +  {"",    "$HOME/bin/status/home_or_work.sh", 10,                  0},
 +  {"",    "$HOME/bin/status/mail.sh",         10,                  0},
